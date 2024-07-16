@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   console.log('1 commit')
+  console.log('2 commit')
   return (
     <div className="App">
       <header className="App-header">
