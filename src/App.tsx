@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  test345345
   test12
   return (
     <div className="App">
