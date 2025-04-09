@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
+        리뷰 반영했습니다
       </header>
     </div>
   );
