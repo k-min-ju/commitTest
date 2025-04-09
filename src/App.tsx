@@ -3,8 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  dev반영
-  리뷰반영
   return (
     <div className="App">
       <header className="App-header">
@@ -20,7 +18,6 @@ function App() {
         >
         </a>
         메인 브랜치 변경
-        메인 브랜치 변경2
       </header>
     </div>
   );
