@@ -3,9 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  test1
-  test2
-  test3
   return (
     <div className="App">
       <header className="App-header">
@@ -20,8 +17,6 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
-        메인 브랜치 변경
-        메인 브랜치 변경2
       </header>
     </div>
   );
