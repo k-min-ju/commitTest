@@ -6,7 +6,7 @@ on:
       - opened
       - synchronize
     branches:
-      - 'feature/**'
+      - '*/ai-test/*'
 
 permissions:
   contents: read
