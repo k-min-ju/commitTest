@@ -14,6 +14,7 @@ permissions:
 
 jobs:
   review:
+    if: contains(github.head_ref, 'ai-test')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
