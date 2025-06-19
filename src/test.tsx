@@ -83,7 +83,6 @@ const OrderBlock = ({ orderNo, onRemove }: OrderBlockProps) => {
             label="E-mail form reply"
             FrontIcon={IconCornerUpLeft}
           >
-            <EmailFormItems orderNo={orderNo} />
           </Menu.SubMenuItem>
           <Menu.Item
             FrontIcon={IconClipboardOff}
@@ -95,32 +94,4 @@ const OrderBlock = ({ orderNo, onRemove }: OrderBlockProps) => {
       </Menu>
     </div>
   )
-}
-
-function EmailFormItems({ orderNo }: { orderNo: string }) {
-  const { editableCodes } = useCodeDetail({
-    groupCode: GROUP_CODE.CD_TYPE_EMAIL_FORM,
-  })
-
-  const { selected_no_eskey } = useSearch({ strict: false })
-
-  const { open: openMailWrite } = useMailWriteOpen()
-  const { cmUserEmailBiz } = useDetailPageInfo()
-
-  return editableCodes.map(({ nm_code, cd_code }) => (
-    <Menu.Item
-      key={cd_code}
-      onClick={() =>
-        openMailWrite({
-          selected_no_eskey,
-          no_order: orderNo,
-          cm_biz: cmUserEmailBiz,
-          cm_type_email_form: cd_code,
-          cd_email_new_reply: autoEmailType.Reply,
-        })
-      }
-    >
-      {nm_code}
-    </Menu.Item>
-  ))
 }
