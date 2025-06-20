@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   review:
-    if: contains(github.head_ref, 'ai-test')
+    #if: contains(github.head_ref, 'ai-test')
+    if: github.actor == 'k-min-ju'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
